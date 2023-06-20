@@ -6,7 +6,7 @@ import streamlit as st
 st.set_page_config(layout="wide")
 
 # Data
-df = pd.read_csv('data/data_sample.csv')
+df = pd.read_csv('data_sample.csv')
 vars_cat = [var for var in df.columns if var.startswith('cat')]
 vars_cont = [var for var in df.columns if var.startswith('cont')]
 
